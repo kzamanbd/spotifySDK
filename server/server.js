@@ -12,7 +12,7 @@ app.post('/refresh', (req, res) => {
         redirectUri: 'http://localhost:3000',
         clientId: 'c3702623b01045d6b51e058935cf9145',
         clientSecret: '3d2044d208b245ebbc0f621ea779df9d',
-        refreshToken
+        refreshToken,
     })
 
 
@@ -49,4 +49,4 @@ spotsdifyApi.authorizationCodeGrant(code).then(data => {
 
 })
 
-app.listen(3001)
+app.listen(3001) 
